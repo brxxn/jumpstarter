@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "tsc --build",
+    "build": "npx tsc --build",
     "start": "npm run build && node ./build/index"
   },
   "dependencies": {
