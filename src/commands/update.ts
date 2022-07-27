@@ -22,15 +22,8 @@ export default class UpdateCommand extends DiscordCommandHandler {
     }
 
     exec('git pull', async (error, stdout, stderr) => {
-      if (error || stderr.length) {
-        await interaction.reply({
-          content: ':bangbang: Whoops, something went wrong!'
-        });
-        return;
-      }
-
       await interaction.reply({
-        content: ':inbox_tray: Successfully updated from git! You will need to restart this instance to apply changes.'
+        content: `:inbox_tray: Ran \`git pull\` with the following output: \`\`\`\n${stdout}\n\`\`\``
       });
     });
   }
