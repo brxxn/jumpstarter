@@ -13,7 +13,7 @@ export default class PingCommand extends DiscordCommandHandler {
 
   async execute(interaction: ChatInputCommandInteraction, config: JumpstarterConfiguration, client: Client) {
     await interaction.reply({
-      content: 'Pong!'
+      content: ':ping_pong: Pong!'
     });
   }
 

@@ -37,7 +37,7 @@ export default class NgrokStopModal extends DiscordModalInteractionHandler {
     }
 
     await interaction.reply({
-      content: `:satellite_orbital: Stopped service successfully.`
+      content: `:airplane_arriving: Stopped service successfully.`
     });
 
   }

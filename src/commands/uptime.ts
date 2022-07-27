@@ -14,7 +14,7 @@ export default class UptimeCommand extends DiscordCommandHandler {
 
   async execute(interaction: ChatInputCommandInteraction, config: JumpstarterConfiguration, client: Client) {
     await interaction.reply({
-      content: `Process uptime: \`${process.uptime()} seconds\`\nServer uptime: \`${os.uptime()} seconds\``
+      content: `:timer: Process uptime: \`${process.uptime()} seconds\`\n:hourglass: Server uptime: \`${os.uptime()} seconds\``
     });
   }
 

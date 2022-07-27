@@ -32,7 +32,7 @@ export default class NgrokListCommand extends DiscordCommandHandler {
     const ngrokTunnelJson = JSON.stringify(ngrokTunnels);
 
     await interaction.reply({
-      content: `:satellite_orbital: Debug ngrok tunnel information (json): \`\`\`json\n${ngrokTunnelJson}\n\`\`\``
+      content: `:satellite: Debug ngrok tunnel information (json): \`\`\`json\n${ngrokTunnelJson}\n\`\`\``
     });
   }
 
