@@ -11,6 +11,7 @@ import NgrokStopCommand from './commands/ngrok/ngrokStop';
 import NgrokStopAllCommand from './commands/ngrok/ngrokStopAll';
 import PingCommand from './commands/ping';
 import RestartCommand from './commands/restart';
+import SourceCommand from './commands/source';
 import UpdateCommand from './commands/update';
 import UptimeCommand from './commands/uptime';
 import NgrokStartModal from './modals/ngrokStart';
@@ -46,6 +47,7 @@ let commands: DiscordCommandHandler[] = [
   new NgrokStopAllCommand(),
   new NgrokStopCommand(),
   new RestartCommand(),
+  new SourceCommand(),
   new UpdateCommand(),
   new UptimeCommand()
 ];
